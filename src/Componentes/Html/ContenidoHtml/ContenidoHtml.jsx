@@ -14,11 +14,11 @@ export const ContenidoHtml = ({datosDoc}) => {
             <div className="doc-body row">
                 <div className="doc-content col-md-9 col-12 order-1">
                     <Contenido datosDoc={datosDoc}/>
-                </div>{/*//doc-content*/}
+                </div>
 
                 <SideBar  datosDoc={datosDoc}/>
-            </div>{/*//doc-body*/}
-        </div>{/*//container*/}
+            </div>
+        </div>
     </div>
     )
 }

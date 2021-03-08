@@ -5,7 +5,6 @@ export const CrearContennido = ({contenido , titulo , subContent}) => {
 
 
     return (
-       
         <section id={titulo.id} className="doc-section">
             <h2 className="section-title">{ titulo.nombre }</h2>
             <div className="section-block">
