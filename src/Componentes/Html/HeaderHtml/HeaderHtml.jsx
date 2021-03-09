@@ -18,7 +18,7 @@ export const HeaderHtml = () => {
             <li className="breadcrumb-item active">Quick Start</li>
           </ol>
           <div className="top-search-box">
-            <form className="form-inline search-form justify-content-center" action method="get">
+            <form className="form-inline search-form justify-content-center"  method="get">
               <input type="text" placeholder="Search..." name="search" className="form-control search-input" />
               <button type="submit" className="btn search-btn" value="Search"><i className="fas fa-search" /></button>
             </form>
