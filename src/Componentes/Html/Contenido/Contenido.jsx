@@ -1,16 +1,16 @@
 import React from 'react'
 import { CrearContennido } from '../../../fun/CrearContennido'
+import { Link } from 'react-router-dom'
+import { Code } from '../../Code/Code'
 
 
 export const Contenido = ({ datosDoc }) => {
 
-    console.log( datosDoc )
 
-
-    // datosDoc.map(res=>console.log( res.contenido))
-
+    
     return (
         <div className="content-inner">
+<<<<<<< HEAD
         {
             datosDoc.map( datoDoc => (
                
@@ -326,6 +326,26 @@ export const Contenido = ({ datosDoc }) => {
                 </div>{/*//section-block*/}
             </section>{/*//doc-section*/}
         </section>{/*//doc-section*/}
+=======
+        
+            {
+                datosDoc !== undefined ? (
+                    
+                    datosDoc.map( (datoDoc , i) => (
+                        datoDoc.contenido !== undefined ?(
+                        <CrearContennido 
+                            key={ i }
+                            contenido={ datoDoc.contenido } 
+                            titulo={ datoDoc.titulo } 
+                            subContent={ datoDoc.subContent } 
+                            />):null
+                    )
+        
+                        ) 
+                ):null
+            }
+
+>>>>>>> 68530055f7dddad7fb9e91d965fdf7bfdfb54bb2
     </div>
     )
 }

@@ -22,7 +22,11 @@ export const Home = () => {
         <div className="intro">
           <p>Welcome to prettyDocs. This landing page is an example of how you can use a card view to present segments of your documentation. You can customise the icon fonts based on your needs.</p>
           <div className="cta-container">
+<<<<<<< HEAD
             <button className="btn btn-primary btn-cta" ><i className="fas fa-cloud-download-alt" /> Download Now</button>
+=======
+            <Link className="btn btn-primary btn-cta" to="/htmlDoc" rel="noreferrer"><i className="fas fa-cloud-download-alt" /> Download Now</Link>
+>>>>>>> 68530055f7dddad7fb9e91d965fdf7bfdfb54bb2
           </div>
         </div>
         <div id="cards-wrapper" className="cards-wrapper row">
@@ -43,7 +47,7 @@ export const Home = () => {
               </div>
               <h3 className="title">Components</h3>
               <p className="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-              <a className="link" href="components.html"><span /></a>
+              <Link className="link" to="/"><span /></Link>
             </div>
           </div>
           <div className="item item-blue col-lg-4 col-6">
@@ -53,7 +57,7 @@ export const Home = () => {
               </div>
               <h3 className="title">Charts</h3>
               <p className="intro">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-              <a className="link" href="charts.html"><span /></a>
+              <Link className="link" to="charts.html"><span /></Link>
             </div>
           </div>
           <div className="item item-purple col-lg-4 col-6">
@@ -63,7 +67,7 @@ export const Home = () => {
               </div>
               <h3 className="title">FAQs</h3>
               <p className="intro">Layout for FAQ page. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-              <a className="link" href="faqs.html"><span /></a>
+              <Link className="link" to="/"><span /></Link>
             </div>
           </div>
           <div className="item item-primary col-lg-4 col-6">
@@ -73,7 +77,7 @@ export const Home = () => {
               </div>
               <h3 className="title">Showcase</h3>
               <p className="intro">Layout for showcase page. Lorem ipsum dolor sit amet, consectetuer adipiscing elit </p>
-              <a className="link" href="showcase.html"><span /></a>
+              <Link className="link" to="/"><span /></Link>
             </div>
           </div>
           <div className="item item-orange col-lg-4 col-6">
@@ -83,7 +87,7 @@ export const Home = () => {
               </div>{/*//icon-holder*/}
               <h3 className="title">License &amp; Credits</h3>
               <p className="intro">Layout for license &amp; credits page. Consectetuer adipiscing elit.</p>
-              <a className="link" href="license.html"><span /></a>
+              <Link className="link" to="/"><span /></Link>
             </div>
           </div>
         </div>

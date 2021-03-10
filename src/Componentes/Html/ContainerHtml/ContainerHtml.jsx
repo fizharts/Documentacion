@@ -3,6 +3,7 @@ import { getDatos } from '../../../fun/funGet'
 import { Footer } from '../../ui/Footer/Footer'
 import { ContenidoHtml } from '../ContenidoHtml/ContenidoHtml'
 import { HeaderHtml } from '../HeaderHtml/HeaderHtml'
+import { Promo } from '../Promo/Promo'
 export const ContainerHtml = () => {
 
     const [datosDoc, setDatosDoc] = useState([])
@@ -15,10 +16,11 @@ export const ContainerHtml = () => {
     return (
         <Fragment>
             <div className="page-wrapper">
-
+                {/*Esta es la cabecera*/}
                 <HeaderHtml />
-
+                {/*Esta es el contenido*/}
                 <ContenidoHtml  datosDoc={ datosDoc }/>
+<<<<<<< HEAD
 
                 <div id="promo-block" className="promo-block">
                     <div className="container">
@@ -48,6 +50,11 @@ export const ContainerHtml = () => {
                     </div>{/*//container*/}
                 </div>{/*//promo-block*/}
             </div>{/*//page-wrapper*/}
+=======
+                {/* Promo de mas cursos */}
+                <Promo/>
+            </div>
+>>>>>>> 68530055f7dddad7fb9e91d965fdf7bfdfb54bb2
 
             <Footer />
 
