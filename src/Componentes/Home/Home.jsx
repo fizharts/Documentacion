@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import { Footer } from '../ui/Footer/Footer'
 import { Header } from '../ui/Header/Header'
 
@@ -21,7 +22,7 @@ export const Home = () => {
         <div className="intro">
           <p>Welcome to prettyDocs. This landing page is an example of how you can use a card view to present segments of your documentation. You can customise the icon fonts based on your needs.</p>
           <div className="cta-container">
-            <a className="btn btn-primary btn-cta" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/prettydocs-free-bootstrap-theme-for-developers-and-startups/" target="_blank"><i className="fas fa-cloud-download-alt" /> Download Now</a>
+            <button className="btn btn-primary btn-cta" ><i className="fas fa-cloud-download-alt" /> Download Now</button>
           </div>
         </div>
         <div id="cards-wrapper" className="cards-wrapper row">
@@ -32,7 +33,7 @@ export const Home = () => {
               </div>
               <h3 className="title">Quick Start</h3>
               <p className="intro">Demo example, consectetuer adipiscing elit</p>
-              <a className="link" href="start.html"><span /></a>
+              <Link className="link" to="/htmlDoc"><span /></Link>
             </div>
           </div>
           <div className="item item-pink item-2 col-lg-4 col-6">

@@ -19,10 +19,12 @@ export const ContainerHtml = () => {
                 <HeaderHtml />
 
                 <ContenidoHtml  datosDoc={ datosDoc }/>
+
                 <div id="promo-block" className="promo-block">
                     <div className="container">
                         <div className="promo-block-inner">
-                            <h3 className="promo-title text-center"><i className="fas fa-heart" /> <a href="https://themes.3rdwavemedia.com/bootstrap-templates/portfolio/instance-bootstrap-portfolio-theme-for-developers/" target="_blank">Are you an ambitious and entrepreneurial developer?</a></h3>
+                            <h3 className="promo-title text-center"><i className="fas fa-heart" /> 
+                            Are you an ambitious and entrepreneurial developer?</h3>
                             <div className="row">
                                 <div className="figure-holder col-lg-5 col-md-6 col-12">
                                     <div className="figure-holder-inner">

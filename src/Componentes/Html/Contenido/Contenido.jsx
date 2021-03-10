@@ -1,6 +1,7 @@
 import React from 'react'
 import { CrearContennido } from '../../../fun/CrearContennido'
 
+
 export const Contenido = ({ datosDoc }) => {
 
     console.log( datosDoc )
@@ -10,7 +11,6 @@ export const Contenido = ({ datosDoc }) => {
 
     return (
         <div className="content-inner">
-        
         {
             datosDoc.map( datoDoc => (
                
@@ -28,74 +28,16 @@ export const Contenido = ({ datosDoc }) => {
             ) )
         }
 
-
-
-
-
-        <section id="installation-section" className="doc-section">
-            <h2 className="section-title">Installation</h2>
-            <div id="step1" className="section-block">
-                <h3 className="block-title">Step One</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-                </p>
-                <div className="code-block">
-                    <h6>Default code example:</h6>
-                    <p><code>bower install &lt;package&gt;</code></p>
-                    <p><code>npm install &lt;package&gt;</code></p>
-                </div>
-            </div>
-            
-            <div id="step2" className="section-block">
-                <h3 className="block-title">Step Two</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-</p>
-                <div className="row">
-                    <div className="col-md-6 col-12">
-                        <h6>Un-ordered list example</h6>
-                        <ul className="list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Aliquam tincidunt mauris.</li>
-                            <li>Ultricies eget vel aliquam libero.
-<ul>
-                                    <li>Turpis pulvinar</li>
-                                    <li>Feugiat scelerisque</li>
-                                    <li>Ut tincidunt</li>
-                                </ul>
-                            </li>
-                            <li>Pellentesque habitant morbi.</li>
-                            <li>Praesent dapibus, neque id.</li>
-                        </ul>
-                    </div>
-                    <div className="col-md-6 col-12">
-                        <h6>Ordered list example</h6>
-                        <ol className="list">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Aliquam tincidunt mauris.</li>
-                            <li>Ultricies eget vel aliquam libero.
-<ul>
-                                    <li>Turpis pulvinar</li>
-                                    <li>Feugiat scelerisque</li>
-                                    <li>Ut tincidunt</li>
-                                </ul>
-                            </li>
-                            <li>Pellentesque habitant morbi.</li>
-                            <li>Praesent dapibus, neque id.</li>
-                        </ol>
-                    </div>
-                </div>{/*//row*/}
-            </div>{/*//section-block*/}
-            <div id="step3" className="section-block">
-                <h3 className="block-title">Step Three</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-</p>
-            </div>{/*//section-block*/}
-        </section>{/*//doc-section*/}
         <section id="code-section" className="doc-section">
-            <h2 className="section-title">Code</h2>
+            <h2 className="section-title">Ceeeeeode</h2>
+            <pre>
+            <code className="language-markup">
+            &lt;!DOCTYPE html&gt; {"\n"}&lt;html lang="en"&gt; {"\n"}{"    "}...{"\n"}{"    "}&lt;div class="jumbotron"&gt; {"\n"}{"        "}&lt;h1&gt;Hello, world!&lt;/h1&gt; {"\n"}{"        "}&lt;p&gt;...&lt;/p&gt; {"\n"}{"        "}&lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt; {"\n"}{"    "}&lt;/div&gt;{"\n"}{"    "}&lt;div class="jumbotron"&gt; {"\n"}{"        "}&lt;h1&gt;Hello, world!&lt;/h1&gt; {"\n"}{"        "}&lt;p&gt;...&lt;/p&gt; {"\n"}{"        "}&lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt; {"\n"}{"    "}&lt;/div&gt;{"\n"}{"    "}...{"\n"}&lt;/html&gt;
+            </code>
+            </pre>
             <div className="section-block">
                 <p>
-                    <a href="https://prismjs.com/" target="_blank">PrismJS</a> is used as the syntax highlighter here. You can <a href="https://prismjs.com/download.html" target="_blank">build your own version</a> via their website should you need to.
-</p>
+            </p>
             </div>{/*//section-block*/}
             <div id="html" className="section-block">
                 <div className="callout-block callout-success">
@@ -109,7 +51,11 @@ export const Contenido = ({ datosDoc }) => {
                 </div>
                 <div className="code-block">
                     <h6>HTML Code Example</h6>
-                    <pre><code className="language-markup">&lt;!DOCTYPE html&gt; {"\n"}&lt;html lang="en"&gt; {"\n"}{"    "}...{"\n"}{"    "}&lt;div class="jumbotron"&gt; {"\n"}{"        "}&lt;h1&gt;Hello, world!&lt;/h1&gt; {"\n"}{"        "}&lt;p&gt;...&lt;/p&gt; {"\n"}{"        "}&lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt; {"\n"}{"    "}&lt;/div&gt;{"\n"}{"    "}&lt;div class="jumbotron"&gt; {"\n"}{"        "}&lt;h1&gt;Hello, world!&lt;/h1&gt; {"\n"}{"        "}&lt;p&gt;...&lt;/p&gt; {"\n"}{"        "}&lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt; {"\n"}{"    "}&lt;/div&gt;{"\n"}{"    "}...{"\n"}&lt;/html&gt;</code></pre>
+                    <pre>
+                    <code className="language-markup">
+                    &lt;!DOCTYPE html&gt; {"\n"}&lt;html lang="en"&gt; {"\n"}{"    "}...{"\n"}{"    "}&lt;div class="jumbotron"&gt; {"\n"}{"        "}&lt;h1&gt;Hello, world!&lt;/h1&gt; {"\n"}{"        "}&lt;p&gt;...&lt;/p&gt; {"\n"}{"        "}&lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt; {"\n"}{"    "}&lt;/div&gt;{"\n"}{"    "}&lt;div class="jumbotron"&gt; {"\n"}{"        "}&lt;h1&gt;Hello, world!&lt;/h1&gt; {"\n"}{"        "}&lt;p&gt;...&lt;/p&gt; {"\n"}{"        "}&lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt; {"\n"}{"    "}&lt;/div&gt;{"\n"}{"    "}...{"\n"}&lt;/html&gt;
+                    </code>
+                    </pre>
                 </div>{/*//code-block*/}
             </div>{/*//section-block*/}
             <div id="css" className="section-block">
@@ -159,6 +105,12 @@ export const Contenido = ({ datosDoc }) => {
                 </div>{/*//code-block*/}
             </div>{/*//section-block*/}
         </section>{/*//doc-section*/}
+
+
+
+
+
+        
         <section id="callouts-section" className="doc-section">
             <h2 className="section-title">Callouts</h2>
             <div className="section-block">
@@ -348,15 +300,12 @@ export const Contenido = ({ datosDoc }) => {
                     <div className="col-md-6 col-12">
                         <h6>Responsive Video 16:9</h6>
                         {/* 16:9 aspect ratio */}
-                        <div className="embed-responsive embed-responsive-16by9">
-                            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/ejBkOjEG6F0?rel=0&controls=0&showinfo=0" frameBorder={0} allowFullScreen />
-                        </div>
+                     
                     </div>
                     <div className="col-md-6 col-12">
                         <h6>Responsive Video 4:3</h6>
                         {/* 4:3 aspect ratio */}
                         <div className="embed-responsive embed-responsive-4by3">
-                            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/ejBkOjEG6F0?rel=0&controls=0&showinfo=0" frameBorder={0} allowFullScreen />
                         </div>
                     </div>
                 </div>{/*//row*/}

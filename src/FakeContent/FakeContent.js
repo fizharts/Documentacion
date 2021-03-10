@@ -89,6 +89,12 @@ export const FakeContent = [
             id : 'code-section',
             subTitulo : true 
         },
+        contenido : [
+                        {
+                            type : 'parrafo',
+                            cont :'PrismJS is used as the syntax highlighter here. You can build your own version via their website should you need to.'
+                        }
+                ],
             subContent : [
                 {texto :'HTML' ,
                 id: 'html'},

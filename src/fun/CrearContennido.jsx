@@ -1,5 +1,8 @@
 import React from 'react'
 import { Elementos } from '../Componentes/Html/Elemento/Elemento'
+import { SubContenido } from '../Componentes/Html/SubContenido/SubContenido'
+
+
 
 export const CrearContennido = ({contenido , titulo , subContent}) => {
 
@@ -17,16 +20,7 @@ export const CrearContennido = ({contenido , titulo , subContent}) => {
                 
                 {
                     subContent.length !== 0 ? (
-                        <div id="step1" className="section-block">
-                        <h3 className="block-title">Step One</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.
-                        </p>
-                        <div className="code-block">
-                            <h6>Default code example:</h6>
-                            <p><code>bower install &lt;package&gt;</code></p>
-                            <p><code>npm install &lt;package&gt;</code></p>
-                        </div>
-                    </div>
+                        <SubContenido subContent={ subContent }/>
                     ): null
                 }
                 

@@ -1,8 +1,11 @@
 import React, { Fragment} from 'react'
-
+import genkey from 'genkey'
 export const SideBar = ({ datosDoc }) => {
 
-
+    // let datosDocKey = genkey( datosDoc , 33 , true )
+    console.log(
+        datosDoc
+        )
 
     return (
 
@@ -10,10 +13,12 @@ export const SideBar = ({ datosDoc }) => {
             <div id="doc-nav" className="doc-nav">
                 <nav id="doc-menu" className="nav doc-menu flex-column sticky">
                     {
+                        
                         datosDoc.map(datoDoc => (
-                            <Fragment>
+                            <div
+                            key={ datoDoc.titulo.id }
+                            >
                                 <a className="nav-link scrollto"
-                                    key={datoDoc.titulo.id + 1}
                                     href={`#${datoDoc.titulo.id}`}>
                                     {datoDoc.titulo.nombre}</a>
 
@@ -27,7 +32,7 @@ export const SideBar = ({ datosDoc }) => {
                                     </nav>
                                 ) : null
                                 }
-                            </Fragment>
+                            </div>
                         ))
                     }
                 </nav>
